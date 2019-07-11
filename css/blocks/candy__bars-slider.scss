@@ -52,9 +52,9 @@
 }
 
 .slider__left {
-    background-image: url('/img/slider/left/Эллипс_.png'),
-    url('/img/slider/left/Эллипс.png'),
-    url('/img/slider/left/листья.png');
+    background-image: url('../img/slider/left/Эллипс_.png'),
+    url('../img/slider/left/Эллипс.png'),
+    url('../img/slider/left/листья.png');
     background-repeat: no-repeat;
     background-position-x: 66%;
     background-position-y: 100%;
@@ -151,7 +151,7 @@
 
 .slider__price-measure:before {
     content: '';
-    background-image: url('/img/slider/right/rub-002.png');
+    background-image: url('../img/slider/right/rub-002.png');
     background-size: 2rem;
     background-repeat: no-repeat;
     width: 3rem;
@@ -278,8 +278,8 @@
 .slider__bottom-img {
     width: 100%;
     height: 100%;
-    background-image: url('/img/team/Ягода\ \(1\).png'),
-    url('/img/team/Узор_на_фоне.png');
+    background-image: url('../img/team/Ягода\ \(1\).png'),
+    url('../img/team/Узор_на_фоне.png');
     background-repeat: no-repeat;
     position: absolute;
     background-position-x: 100%;
