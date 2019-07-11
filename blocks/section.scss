@@ -1,0 +1,92 @@
+.section{ 
+  height: 100vh;
+  min-height: 40.625rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.section__title {
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 4.0625rem;
+  text-transform: uppercase;
+  font-family: Alegreyasans-bold, Verdana, Arial, sans-serif;
+  margin-bottom: 0.625rem;
+
+  &.section__title-white {
+    color: #ffffff;
+
+    @include phones {
+      line-height: 3.0625rem;
+    }
+  }
+
+  &.section__title-black {
+    color: #0d0d0d;
+
+    @include small-phones {
+      font-size: 1.75rem;
+    }
+  }
+
+  &.section__title-center{
+    text-align: center;
+  }
+
+  &.section__title-top {
+    margin-top: 6.25rem;
+
+    @include tablets {
+      margin-top: 3.25rem;
+    }
+
+    @include small-phones {
+      margin-top: 1.25rem;
+    }
+  }
+
+  &.section__title-green {
+    color: #0f5a47;
+
+    @include small-phones {
+      font-size: 1.75rem;
+      margin-top: 1rem;
+      z-index: 2;
+    }
+  }
+
+  &.section__title-slider {
+    font-size: 2.6rem;
+    
+    @include small-phones {
+      font-size: 1.6rem;
+      // margin-right: 10rem;
+      
+    }
+  }
+
+  &.section__title-video {
+
+    @include phones {
+      font-size: 2.5rem;
+    }
+
+    @include small-phones {
+      font-size: 1.8rem;
+    }
+  }
+
+  @include tablets {
+    margin-bottom: 0.625rem;
+  }
+
+  @include phones {
+    margin-bottom: 0rem;
+    font-size: 2.75rem;
+  }
+
+  @include small-phones {
+    line-height: 2.9rem;
+  }
+}

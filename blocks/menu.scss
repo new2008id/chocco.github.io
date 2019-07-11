@@ -1,0 +1,50 @@
+.menu {
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+
+  .menu__item {
+    margin-right: 0.75rem;
+    display: flex;
+    align-items: center;
+    
+    &:after {
+      content: '';
+      display: block;
+      margin-left: 0.3125rem;
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+
+    }
+    .menu__link {
+      font-size: 1.125rem;
+      color: #fff;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.phone {
+    width: 0.75rem;
+    height: 0.6875rem;  
+    fill: #fff;  
+}
+
+.link__phone {
+  @include tablets {
+    display: none;
+  }
+}
+
