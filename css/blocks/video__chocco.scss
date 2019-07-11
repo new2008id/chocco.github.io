@@ -1,0 +1,157 @@
+.video__chocco {
+    background-color: #f8faf9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url('/img/video/лист.png'),
+    url('/img/video/лист\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position-x: 5%, 95%;
+    background-position-y: 92%, 15%;
+
+    @include small-phones {
+      background-size: 3rem;
+    }
+}
+
+.container__video {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+.video__player {
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+    margin-top: 2rem;
+}
+  
+  .video__player-svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    fill: white; 
+    width: 15rem;
+
+    @include small-phones {
+        width: 6rem;
+    }
+}
+  
+  .video__player-active {
+    opacity: 0; 
+}
+  
+  #player {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; 
+}
+  
+  .video__toolbar {
+    height: 2.1875rem;
+    background-color: #3e3e3e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+}
+  
+  .duration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; 
+}
+  
+  .duration__svg-gray {
+    padding: 0.3125rem 1.25rem;
+    cursor: pointer;
+    fill: #626262;
+    width: 5.625rem;
+    height: 3.125rem; 
+}
+  
+  .duration__length {
+    width: 100%;
+    height: 0.25rem;
+    border-radius: 1px;
+    background-color: #626262;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none; 
+}
+  
+  .duration__length-other {
+    width: 3.625rem;
+    height: 0.25rem; 
+}
+  
+  .duration__length::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #626262;
+    cursor: pointer;
+    width: 0.8125rem;
+    height: 0.8125rem;
+    border-radius: 50%; 
+}
+  
+  .video__sound {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 0.9375rem; 
+}
+  
+  .sound__video-svg {
+    cursor: pointer;
+    fill: #626262;
+    width: 2.5rem; 
+}
+  
+  .sound__volume {
+    margin-left: 0.625rem;
+    margin-top: -0.3125rem; 
+}
+
+.video__img {
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/video/Ежевика_фото.png');
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  position: absolute;
+  margin-top: -8rem;
+  z-index: 1;
+
+    @include small-phones {
+      background-size: 6rem;
+      margin-top: -4rem;
+    }
+}

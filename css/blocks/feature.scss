@@ -1,0 +1,120 @@
+.feature__item {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+    &:after {
+        content: url('/img/icons/feature/after/1.png');
+        position: relative;
+        left: 10rem;
+        bottom: 14.5rem;
+
+        @include tablets {
+            display: none;
+        }
+    }
+
+    &:last-child {
+        
+    
+        &:after {
+          display: none;
+        }
+    }
+
+    @include tablets {
+        width: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    @include small-phones {
+        width: 18rem;
+        margin-right: 9rem;
+        z-index: 1;
+    }
+}
+
+
+
+.feature__pic {
+   width: 7.8125rem;
+   height: 7.8125rem;
+   border-radius: 50%;
+   background: #F2F5F4;
+   display: flex;
+   margin-bottom: 1.6875rem;
+   justify-content: center;
+
+   @include phones {
+        width: 5.8125rem;
+        height: 5.8125rem;
+   }
+
+   @include small-phones {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    margin-bottom: 0.6875rem;
+   }
+
+}
+
+.feature__pic-svg {
+    width: 4.6875rem;
+    height: 4.3125rem;
+    stroke: black;
+    fill: white;
+    margin: 20%;
+
+    @include phones {
+        width: 3.6875rem;
+        height: 3.3125rem;
+    }
+
+    @include small-phones {
+        height: auto;
+    }
+
+}
+
+.feature__desc {
+    text-align: center;
+}
+
+.feature__title {
+    font-family: Alegreyasans-bold;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.6875rem;
+    margin-bottom: 0.625rem;
+
+    @include tablets {
+        font-size: 1.3rem;
+    }
+
+    @include phones {
+        margin-top: .5rem;
+    }
+
+    @include small-phones {
+        font-size: 1rem;
+    }
+}
+
+.feature__text {
+    font-size: 1.125rem;
+    font-family: Alegreyasans-light;
+    color: #666666;
+    line-height: 1.5;
+    margin-top: 1.375rem;
+
+    @include phones {
+        font-size: 1rem;
+        line-height: 1.2;
+        margin-top: 1rem;
+    }
+
+    @include small-phones {
+        font-size: .8rem;
+    }
+}

@@ -1,0 +1,16 @@
+.btn {
+  padding: 1.125rem 1.875rem;
+  border-radius: 1.875rem;
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #0f5a47;
+  font-size: 1.1875rem;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  font-family: Alegreyasans-extrabold;
+
+  @include small-phones {
+    font-size: 1rem;
+  }
+}

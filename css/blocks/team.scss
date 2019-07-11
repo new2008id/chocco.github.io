@@ -1,0 +1,196 @@
+.team {
+    margin-bottom: 2rem;
+    @include small-phones {
+        margin-bottom: 2rem;
+    }
+}
+
+.team__acco {
+    display: flex;
+
+    @include tablets {
+        width: 40rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 5rem;
+    }
+
+    @include phones {
+        margin-left: -3rem;
+    }
+
+    @include small-phones {
+        margin-left: -1.7rem;
+        width: 28rem;
+        overflow: hidden;
+    }
+}
+
+.team__acco-item {
+    margin-bottom: 2.5rem;
+    margin-right: 0.8125rem;
+
+    &:nth-child(even) {
+        margin-top: 3.75rem;
+
+        @include tablets {
+            margin-top: 0;
+        }
+    }
+
+    @include tablets {
+        display: flex;
+        justify-content: center;
+        margin-right: 1.5rem;
+    }
+
+    @include small-phones {
+        margin-bottom: 0;
+    }
+}
+
+.team__acco-link {
+    margin-left: 3.125rem;
+
+
+    @include small-phones {
+        margin-left: 1.6rem;
+        z-index: 1;
+    }
+}
+
+.team__acco-trigger {
+    right: 0.3125rem;
+    color: #323232;
+    font-family: Alegreyasans-bold;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+	position: relative;
+	display: block;
+    margin-bottom: 0.625rem;
+    font-size: 1.25rem;
+
+    @include small-phones {
+        font-size: 1rem;
+        z-index: 2;
+    }
+
+   
+
+    &:before, &:after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: -1.125rem;
+		top: 0.5rem;
+		width: 0;
+        height: 0;
+    }
+
+    &:before {
+		border-top: 0.4375rem solid #0f5a47;
+		border-left: 0.3125rem solid transparent;
+		border-right: 0.3125rem solid transparent;
+		border-bottom: 0px solid transparent;
+		transform: rotate(0deg);
+        transition: .3s;
+    }
+
+    &:after {
+		display: none;
+		border-bottom: 0.4375rem solid #0f5a47;
+		border-left: 0.3125rem solid transparent;
+		border-right: 0.3125rem solid transparent;
+		border-top: 0px solid transparent;
+    }
+}
+
+.team__acco-content {
+    padding-top: 0.875rem;
+
+    @include small-phones {
+        width: 10rem;
+    }
+}
+
+.team__acco-pic {
+    text-align: center;
+	width: 30%;
+}
+
+.team__acco-img {
+    @include small-phones {
+        width: 10rem;
+    }
+}
+
+.team__acco-text {
+    height: 0;
+    overflow: hidden;
+    width: 50%;
+    width: 13.75rem;
+    text-align: center;
+    font-family: Alegreyasans-light;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.125rem;
+    color: #666666;
+
+    @include small-phones {
+        font-size: .9rem;
+    }
+}
+
+
+.team__acco-item.team__acco-active .team__acco-trigger {
+
+    &.team__acco-trigger:before {
+        transform: rotate(-180deg);
+    }
+}
+
+.team__acco-active .team__acco-text {
+    display: block;
+    height: 100%;
+
+    @include small-phones {
+        width: 10rem;
+        height: 40%;
+    }
+}
+
+.team__acco-title {
+    color: #281e1e;
+    font-family: Alegreyasans-bold;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 0.625rem;
+
+    @include small-phones {
+        font-size: .9rem;
+    }
+
+}
+
+.team__image {
+    position: absolute;
+    z-index: 1;
+    margin-top: -6.25rem;
+
+    @include small-phones {
+        width: 6rem;
+    }
+}
+
+.team__acco-temmate {
+    
+    @include phones {
+        width: 14rem;
+    }
+
+    @include small-phones {
+        width: 10rem;
+    }
+}

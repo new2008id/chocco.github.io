@@ -1,0 +1,126 @@
+.section__menu {
+
+	background: url('/img/menu/bg/картинка.png') 50% no-repeat;
+	background-size: cover;
+    position: relative;
+    opacity: 0.8;
+    background-color: #000000;
+    margin-top: -2.2rem;
+
+    @include tablets {
+        margin-top: -4rem;
+    }
+
+    @include phones {
+        margin-top: -2rem;
+
+    }
+}
+
+.menu__title {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+
+.menu__acco {
+	position: absolute;
+    right: 0;
+	top: 0;
+    bottom: 0;
+    display: flex;
+
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    @include tablets {
+        
+    }
+}
+
+
+.menu__acco-item {
+    display: flex; 
+    height: 100%;
+}
+
+.menu__acco-trigger {
+    width: 5rem;
+    display: block;
+    height: 100%;
+
+    @include tablets {
+        z-index: 9;
+    }
+
+    @include small-phones {
+        width: 2rem;
+    }
+}
+
+.menu__acco-trigger__text {
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: Alegreyasans-bold;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    width: max-content;
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    top: 100%;
+    margin-top: -2.1875rem;
+    margin-left: 2.1875rem;
+
+    @include tablets {
+        margin-left: 2.5rem;
+    }
+
+    @include small-phones {
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+.menu__acco-content {
+    height: 100%;
+	background: rgba(#2f3234, .93);
+    overflow: hidden;
+    width: 0;
+}
+
+.menu__acco-item.menu__acco-active .menu__acco-content {
+    width: 34.375rem;
+    transition: .35s; 
+
+    @include tablets {
+        width: 36.3rem;
+    }
+    
+    @include phones {
+        width: 19.3rem;
+    }
+
+    @include small-phones {
+        width: 18.6rem;
+    }
+}
+
+.menu__acco-text {
+    font-family: Alegreyasans-light;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    padding: 3.75rem 1.875rem;
+    line-height: 1.8;
+    color: #fff;
+    display: block;
+    width: 100%;
+}
+
+
+

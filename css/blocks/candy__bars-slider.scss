@@ -1,0 +1,296 @@
+.candy__bars {
+    background-color: #f8faf9;
+    margin-top: -4.5rem;
+
+    @include tablets {
+        margin-top: 0;
+    }
+}
+
+.slider-wrap {
+    position: relative; 
+    margin-top: 10rem;
+}
+
+.slider__list-wrap {
+    overflow: hidden;
+}
+
+.slider__list {
+    display: flex;
+    position: relative;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    right: 0;
+}
+
+.slider__item {
+    position: relative;
+    padding-bottom: 5.3125rem;
+    display: flex;
+    margin-top: 10rem; 
+    max-width: 100%;
+    flex-shrink: 0;
+
+    @include tablets {
+        flex-direction: column;
+    }
+
+    @include phones {
+        margin-top: 2rem; 
+    }
+
+    @include small-phones {
+        margin-top: 3rem;
+    }
+}
+
+
+.slider__left, .slider__right {
+    flex: 1; 
+}
+
+.slider__left {
+    background-image: url('/img/slider/left/Эллипс_.png'),
+    url('/img/slider/left/Эллипс.png'),
+    url('/img/slider/left/листья.png');
+    background-repeat: no-repeat;
+    background-position-x: 66%;
+    background-position-y: 100%;
+    text-align: center;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center; 
+    margin-right: .5rem;
+
+    @include tablets {
+        background-position-x: 55%;
+        margin-bottom: 2rem;
+        margin-right: -7.5rem;
+        width: 54rem;
+    }
+
+    @include phones {
+        background-size: 24rem;
+        background-position-x: 63%;
+        margin-right: 0.5rem;
+        width: 32rem;
+    }
+
+    @include small-phones {
+        background-size: 15rem;
+        width: 23rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.slider__left-img {
+    
+    @include small-phones {
+        width: 13rem;
+        margin-left: 1rem;
+    }
+}
+
+.slider__right .section__title {
+    line-height: 1.2em; 
+}
+
+.slider__options {
+    display: flex;
+    align-items: flex-end; 
+
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+.slider__right {
+    z-index: 1;
+
+    @include tablets {
+        text-align: center;
+        width: 29rem;
+        margin-left: 15rem;
+        
+    }
+
+    @include phones {
+        margin-left: 2.5rem;
+    }
+
+    @include small-phones {
+        width: 24rem;
+        margin-left: 0rem;
+        
+    }
+}
+
+
+.slider__price {
+    display: flex;
+    align-items: flex-end;
+    color: #0d0d0d;
+    font-family: Alegreyasans-light;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase; 
+    margin-right: .4rem;
+}
+
+.slider__price-amount, .slider__price-measure {
+    line-height: 1; 
+
+}
+
+.slider__price-amount {
+    font-size: 4.5rem; 
+
+}
+
+.slider__price-measure:before {
+    content: '';
+    background-image: url('/img/slider/right/rub-002.png');
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    
+   
+}
+
+.slider__btn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    z-index: 20; 
+
+    @include tablets {
+        top: 38%;
+    }
+
+    @include phones {
+        top: 47%;
+    }
+
+    @include small-phones {
+        top: 50%;
+    } 
+}
+  
+.slider__arrow {
+    width: 100%;
+    height: 100%; 
+    
+}
+
+.slider__btn-next {
+    right: 2.5rem; 
+
+    @include phones {
+        right: -1rem;
+    }
+}
+    
+.slider__btn-next img {
+    transform: rotate(0deg); 
+    width: 1rem;
+}
+
+.slider__btn-prev {
+    left: 2.5rem; 
+
+    @include phones {
+        left: 0.5rem;
+    }
+
+}
+
+.slider__btn-prev img {
+    transform: rotate(-180deg); 
+    width: 1rem;
+}
+
+.ingredients__title {
+    color: #323232;
+    font-family: Alegreyasans-regular;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+    @include small-phones {
+        margin-top: 1rem;
+    }
+}
+
+.ingredients__desc {
+    color: #666666;
+    font-size: 1.125rem;
+    font-family: Alegreyasans-light;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1.75rem 0;
+}
+
+.candy__bars-options {
+    display: flex;
+
+    @include tablets {
+        justify-content: center;
+        text-align: left;
+        margin: 3rem 0;
+    }
+
+    @include phones {
+        margin: 1rem 0;
+    }
+
+    @include small-phones {
+        margin: 1rem 0;
+    }
+}
+
+.candy__bars-title {
+    color: #333333;
+    font-family: Alegreyasans-regular;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.125rem;
+}
+
+.candy__bars-quantity {
+    color: #333333;
+    font-size: 1.125rem;
+    font-family: Alegreyasans-bold;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.candy__bars-weight {
+    margin-left: 2.8125rem;
+}
+
+.slider__bottom-img {
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/team/Ягода\ \(1\).png'),
+    url('/img/team/Узор_на_фоне.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position-x: 100%;
+    background-position-y: 23%,0%;
+    margin-top: -19rem;
+    
+
+    @include small-phones {
+        background-position-y: 43%,39%;
+        background-size: 5rem
+    }
+}
+  
+  

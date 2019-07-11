@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Alegreyasans-light;
+}
+
+.header__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.header__order-btn {
+  margin-top: 1.875rem;
+
+  @include tablets {
+    margin-top: 3.875rem;
+  }
+
+  @include phones {
+    margin-top: 3rem;
+  }
+
+  @include small-phones {
+    margin: .9rem;
+  }
+}
+
+.link__phone {
+  margin-left: 1.5625rem;
+  font-size: 1.5rem;
+  color: #fff;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.logo {
+  width: 3.75rem;
+  font-family: Museo_sans_cyrl_700;
+  color: white;
+  font-size: 1.5rem;
+}

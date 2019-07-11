@@ -1,0 +1,174 @@
+.reviews {
+    background-image: url('/img/reviews/Ягода.png'); 
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 3%;
+
+    @include small-phones {
+        background-size: 7rem;
+    }
+}
+
+
+
+.reviews__content {
+    margin-top: 1.875rem;
+    display: flex;
+    background-color: #f8faf9;
+    width: 58.75rem;
+    height: 21.9375rem;
+    background-image: url('/img/reviews/Слой_2.png'),
+    url('/img/reviews/Эллипс_6.png');
+    background-repeat: no-repeat;
+    background-position-x: 100%, 50%;
+
+    @include tablets {
+        height: 44.9375rem;
+        background-position-x: 94%, 50%;
+    }
+
+    @include small-phones {
+        height: 25.9375rem;
+        background-position-x: 69%, 50%;
+        background-size: 7rem;
+    }
+}
+
+.reviews__container {
+    margin: 3rem auto;
+    width: 95%;
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        width: 40%;
+    }
+}
+
+.reviews__right {
+    margin-top: 1.125rem;
+    margin-left: 0.9375rem;
+    width: 31.25rem;
+
+    @include tablets {
+        text-align: center;
+        width: auto;
+    }
+
+    .reviews__title {
+        color: #323232;
+        font-size: 1.75rem;
+        font-family: Alegreyasans-bold;
+        font-weight: 700;
+        font-style: normal;
+
+        @include small-phones {
+            font-size: 1rem;
+        }
+    }
+
+    .reviews__desc {
+        color: #666666;
+        font-size: 1.125rem;
+        font-family: Alegreyasans-light;
+        font-weight: 400;
+        font-style: normal;
+        margin: 1.75rem 0;
+
+        @include small-phones {
+            font-size: .9rem;
+        }
+         
+    }
+
+    .reviews__name {
+        color: #666666;
+        font-size: 1.125rem;
+        font-family: Alegreyasans-regular;
+        font-weight: 400;
+        font-style: normal;
+
+        @include tablets {
+            font-weight: bold;
+        }
+
+        @include small-phones {
+            font-size: 1rem;
+        }
+    }
+}
+
+.reviews__list {
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.reviews__item {
+    display: none;
+    margin-right: 1.875rem;
+}
+
+.reviews__item.is-active {
+    display: block;
+}
+
+.reviews__photo {
+    margin-top: 2.375rem;
+}
+
+.photo__list {
+    display: flex;
+    justify-content: center;
+
+    .photo__item {
+        margin-right: 1.75rem;
+    }
+
+    .photo__img {
+
+        @include small-phones {
+            width: 4rem;
+        }
+    }
+}
+
+.photo__item.photo__item-active {
+    height: 6.875rem;
+    border: 8px solid #0f5a47;
+    border-radius: 50%;
+
+    @include small-phones {
+        height: 4.875rem;
+        border: 6.5px solid #0f5a47;
+    }
+
+}
+
+.reviews__berries {
+    position: absolute;
+    z-index: 1;
+    margin-top: -9rem;
+
+    @include tablets {
+        margin-top: -2rem;
+        
+    }
+
+    @include small-phones {
+        margin-top: -4rem;
+        width: 5rem;
+    }
+}
+
+.reveiws__left-img {
+    margin-left: 4rem;
+
+    @include small-phones {
+        width: 10rem;
+        margin-left: 7.5rem;
+    }
+}
+
+
