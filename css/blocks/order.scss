@@ -6,9 +6,9 @@
 }
 
 .order__image {
-    background-image: url('/img/order/лист.png'), 
-    url('/img/order/ягода.png'), 
-    url('/img/order/bg/паттерн.png');
+    background-image: url('../img/order/лист.png'), 
+    url('../img/order/ягода.png'), 
+    url('../img/order/bg/паттерн.png');
     background-repeat: no-repeat;
     background-size: 10%, 5%, cover;
     background-position-x: 100%, 2%;
@@ -182,7 +182,7 @@
   .order__radio-elem:checked {
     &+.order__radio-fake {
       &:after {
-        background: url("/img/order/check.svg") 50% no-repeat transparent;
+        background: url("../img/order/check.svg") 50% no-repeat transparent;
         background-size: contain;
         width: 0.6875rem;
         height: 0.5625rem;

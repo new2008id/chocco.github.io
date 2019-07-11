@@ -4,7 +4,7 @@
 }
 
 .hero__pattern {
-    background-image: url('/img/background/узор.png');
+    background-image: url('../img/background/узор.png');
     background-repeat: no-repeat;
     background-position: bottom right;   
     background-size: contain;
@@ -212,8 +212,8 @@
 .hero__img {
     width: 100%;
     height: 100%;
-    background-image: url('/img/hero/листья.png'),
-    url('/img/hero/ягоды.png');
+    background-image: url('../img/hero/листья.png'),
+    url('../img/hero/ягоды.png');
     background-repeat: no-repeat;
     background-position-x: 55%, 76%;
     background-position-y: 87%, 60%;
