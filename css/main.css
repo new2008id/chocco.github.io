@@ -90,44 +90,44 @@ html {
   font-family: Alegreyasans-regular;
   font-weight: 400;
   font-style: normal;
-  src: url("../../fonts/alegreyasans-regular.woff") format("woff"), url("../../fonts//alegreyasans-regular.woff2") format("woff2"); }
+  src: url("../fonts/alegreyasans-regular.woff") format("woff"), url("../fonts//alegreyasans-regular.woff2") format("woff2"); }
 
 @font-face {
   font-family: Alegreyasans-light;
   font-weight: 400;
   font-style: normal;
-  src: url("../../fonts/alegreyasans-light.woff") format("woff"), url("../../fonts/alegreyasans-light.woff2") format("woff2"); }
+  src: url("../fonts/alegreyasans-light.woff") format("woff"), url("../fonts/alegreyasans-light.woff2") format("woff2"); }
 
 @font-face {
   font-family: Alegreyasans-black;
   font-weight: normal;
   font-style: normal;
-  src: url("../../fonts/alegreyasans-black.woff") format("woff"), url("../../fonts/alegreyasans-black.woff2") format("woff2"); }
+  src: url("../fonts/alegreyasans-black.woff") format("woff"), url("../fonts/alegreyasans-black.woff2") format("woff2"); }
 
 @font-face {
   font-family: Alegreyasans-bold;
   font-weight: 700;
   font-style: normal;
-  src: url("../../fonts/alegreyasans-bold.woff") format("woff"), url("../../fonts/alegreyasans-bold.woff2") format("woff2"); }
+  src: url("../fonts/alegreyasans-bold.woff") format("woff"), url("../fonts/alegreyasans-bold.woff2") format("woff2"); }
 
 @font-face {
   font-family: Alegreyasans-extrabold;
   font-weight: 400;
   font-style: normal;
-  src: url("../../fonts/alegreyasans-extrabold.woff") format("woff"), url("../../fonts/alegreyasans-extrabold.woff2") format("woff2"); }
+  src: url("../fonts/alegreyasans-extrabold.woff") format("woff"), url("../fonts/alegreyasans-extrabold.woff2") format("woff2"); }
 
 @font-face {
   font-family: Museo_sans_cyrl_700;
   font-weight: 700;
   font-style: normal;
-  src: url("../../fonts/museo_sans_cyrl_700.woff") format("woff"), url("../../fonts/museo_sans_cyrl_700.woff2") format("woff2"); }
+  src: url("../fonts/museo_sans_cyrl_700.woff") format("woff"), url("../fonts/museo_sans_cyrl_700.woff2") format("woff2"); }
 
 .hero {
   background-color: #61C4D9;
   position: relative; }
 
 .hero__pattern {
-  background-image: url("/img/background/узор.png");
+  background-image: url("../img/background/узор.png");
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: contain; }
@@ -311,7 +311,7 @@ html {
 .hero__img {
   width: 100%;
   height: 100%;
-  background-image: url("/img/hero/листья.png"), url("/img/hero/ягоды.png");
+  background-image: url("../img/hero/листья.png"), url("../img/hero/ягоды.png");
   background-repeat: no-repeat;
   background-position-x: 55%, 76%;
   background-position-y: 87%, 60%;
@@ -523,7 +523,7 @@ html {
       width: 33rem; } }
 
 .chocco {
-  background-image: url("/img/chocco/узор_лист.png");
+  background-image: url("../img/chocco/узор_лист.png");
   background-repeat: no-repeat;
   background-position-y: 45%;
   width: 100%;
@@ -558,7 +558,7 @@ html {
   -ms-flex-align: center;
   align-items: center; }
   .feature__item:after {
-    content: url("/img/icons/feature/after/1.png");
+    content: url("../img/icons/feature/after/1.png");
     position: relative;
     left: 10rem;
     bottom: 14.5rem; }
@@ -648,7 +648,7 @@ html {
       font-size: .8rem; } }
 
 .reviews {
-  background-image: url("/img/reviews/Ягода.png");
+  background-image: url("../img/reviews/Ягода.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 3%; }
@@ -664,7 +664,7 @@ html {
   background-color: #f8faf9;
   width: 58.75rem;
   height: 21.9375rem;
-  background-image: url("/img/reviews/Слой_2.png"), url("/img/reviews/Эллипс_6.png");
+  background-image: url("../img/reviews/Слой_2.png"), url("../img/reviews/Эллипс_6.png");
   background-repeat: no-repeat;
   background-position-x: 100%, 50%; }
   @media screen and (max-width: 768px) {
@@ -957,7 +957,7 @@ html {
     width: 10rem; } }
 
 .section__menu {
-  background: url("/img/menu/bg/картинка.png") 50% no-repeat;
+  background: url("../img/menu/bg/картинка.png") 50% no-repeat;
   background-size: cover;
   position: relative;
   opacity: 0.8;
@@ -1227,7 +1227,7 @@ html {
   align-items: center; }
 
 .order__image {
-  background-image: url("/img/order/лист.png"), url("/img/order/ягода.png"), url("/img/order/bg/паттерн.png");
+  background-image: url("../img/order/лист.png"), url("../img/order/ягода.png"), url("../img/order/bg/паттерн.png");
   background-repeat: no-repeat;
   background-size: 10%, 5%, cover;
   background-position-x: 100%, 2%;
@@ -1368,7 +1368,7 @@ html {
   background: transparent; }
 
 .order__radio_checkbox .order__radio-elem:checked + .order__radio-fake:after {
-  background: url("/img/order/check.svg") 50% no-repeat transparent;
+  background: url("../img/order/check.svg") 50% no-repeat transparent;
   background-size: contain;
   width: 0.6875rem;
   height: 0.5625rem; }
@@ -1645,7 +1645,7 @@ html {
   flex: 1; }
 
 .slider__left {
-  background-image: url("/img/slider/left/Эллипс_.png"), url("/img/slider/left/Эллипс.png"), url("/img/slider/left/листья.png");
+  background-image: url("../img/slider/left/Эллипс_.png"), url("../img/slider/left/Эллипс.png"), url("../img/slider/left/листья.png");
   background-repeat: no-repeat;
   background-position-x: 66%;
   background-position-y: 100%;
@@ -1736,7 +1736,7 @@ html {
 
 .slider__price-measure:before {
   content: '';
-  background-image: url("/img/slider/right/rub-002.png");
+  background-image: url("../img/slider/right/rub-002.png");
   background-size: 2rem;
   background-repeat: no-repeat;
   width: 3rem;
@@ -1847,7 +1847,7 @@ html {
 .slider__bottom-img {
   width: 100%;
   height: 100%;
-  background-image: url("/img/team/Ягода (1).png"), url("/img/team/Узор_на_фоне.png");
+  background-image: url("../img/team/Ягода (1).png"), url("../img/team/Узор_на_фоне.png");
   background-repeat: no-repeat;
   position: absolute;
   background-position-x: 100%;
@@ -1929,7 +1929,7 @@ html {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: url("/img/video/лист.png"), url("/img/video/лист (1).png");
+  background-image: url("../img/video/лист.png"), url("../img/video/лист (1).png");
   background-repeat: no-repeat;
   background-position-x: 5%, 95%;
   background-position-y: 92%, 15%; }
@@ -2050,7 +2050,7 @@ html {
 .video__img {
   width: 100%;
   height: 100%;
-  background-image: url("/img/video/Ежевика_фото.png");
+  background-image: url("../img/video/Ежевика_фото.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
   position: absolute;
